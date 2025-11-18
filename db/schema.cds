@@ -26,7 +26,8 @@ entity Categories : cuid {
     books       : Association to many Books on books.category = $self;
 }
 
-entity Books : cuid, managed {
+entity Books :  managed {
+    key ID : String(36);
     isbn          : String(32);
     title         : String(500) not null;
     subtitle      : String(500);
