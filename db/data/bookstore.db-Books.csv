@@ -1,0 +1,3 @@
+ID,isbn,title,subtitle,description,author_ID,publisher_ID,category_ID,price,currency,stock,publishedDate,language,pages,coverImage,avgRating,createdAt,createdBy,modifiedAt,modifiedBy
+1,978-3-16-148410-0,The Great Gatsby,,A novel set in the Roaring Twenties,1,1,1,10.99,USD,50,1925-04-10,en,180,https://example.com/gatsby.jpg,4.5,2023-01-01 10:00:00,admin,2023-01-01 10:00:00,admin
+2,978-0-14-118263-6,1984,,A dystopian novel about totalitarianism,2,2,2,8.99,USD,100,1949-06-08,en,328,https://example.com/1984.jpg,4.7,2023-01-02 11:00:00,admin,2023-01-02 11:00:00,admin
