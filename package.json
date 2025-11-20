@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.15.7",
     "@sap/cds": "^9",
     "express": "^4"
   },
@@ -11,11 +12,23 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project2": "cds watch --open project2/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "private": true,
   "sapux": [
     "app/project1",
     "app/project1"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        },
+        "schema_evolution": "auto"
+      }
+    }
+  }
 }

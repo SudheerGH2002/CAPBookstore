@@ -12,3 +12,5 @@ service Bookstore @(path: '/bookstore') {
     entity OrderItems as projection on my.OrderItems;
     entity Reviews    as projection on my.Reviews;
 }
+
+annotate Bookstore.Books with @odata.draft.enabled;
